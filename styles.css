@@ -2,3 +2,25 @@
     background: rgb(228,108,160);
 background: radial-gradient(circle, rgba(228,108,160,1) 0%, rgba(166,148,233,1) 100%);
 }
+
+.baner{
+    background-image: url("./img/fonfo\ 2.jpeg");
+    padding: 25%;
+    background-attachment: fixed;
+    background-position: top center;
+    background-size: cover;
+    position: relative;
+    z-index: -1;
+}
+
+.baner::after{
+    content: "";
+    position: absolute;
+    background-color: black;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    opacity: 0.3;
+    z-index: -1;
+}
