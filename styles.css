@@ -24,3 +24,48 @@ background: radial-gradient(circle, rgba(228,108,160,1) 0%, rgba(166,148,233,1) 
     opacity: 0.3;
     z-index: -1;
 }
+.fondo_nav{
+    background-color: blueviolet;
+    height: 50px;
+
+}
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header{
+    width: 100%;
+    background: pink;
+    position: fixed;
+    top: 0;
+
+}
+.p1{
+    background-color: aqua;
+}
+.logo{
+    width: 10px;
+}
+.baner-1{
+    background-image: url("img/fondo\ empleados.jpg");
+    padding: 50%;
+    background-attachment: fixed;
+    background-position: top center;
+    background-size: cover;
+    position: relative;
+    z-index: -1;
+}
+
+.baner-1::after{
+    content: "";
+    position: absolute;
+    background-color: black;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    opacity: 0.3;
+    z-index: -1;
+}
